@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="WorldEdit-6.2">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../WorldEdit-6.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="aspigot">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../aspigot.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../aspigot.jar!/" />
+    </SOURCES>
+  </library>
+</component>

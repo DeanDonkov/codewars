@@ -1,0 +1,28 @@
+From c0c752865822c7843e4d70a7848e8247a7762242 Mon Sep 17 00:00:00 2001
+From: Austin Mayes <austin@avicus.net>
+Date: Mon, 16 Oct 2017 13:12:15 -0500
+Subject: [PATCH] Fix head rotation packet spam
+
+---
+ src/main/java/net/minecraft/server/EntityTrackerEntry.java | 6 ++++--
+ 1 file changed, 4 insertions(+), 2 deletions(-)
+
+diff --git a/src/main/java/net/minecraft/server/EntityTrackerEntry.java b/src/main/java/net/minecraft/server/EntityTrackerEntry.java
+index 1fc2388..c0dcfd6 100644
+--- a/src/main/java/net/minecraft/server/EntityTrackerEntry.java
++++ b/src/main/java/net/minecraft/server/EntityTrackerEntry.java
+@@ -411,8 +411,10 @@ public class EntityTrackerEntry {
+                     }
+ 
+                     // CraftBukkit start - Fix for nonsensical head yaw
+-                    this.i = MathHelper.d(this.tracker.getHeadRotation() * 256.0F / 360.0F);
+-                    this.broadcast(new PacketPlayOutEntityHeadRotation(this.tracker, (byte) i));
++                    if(this.tracker instanceof EntityLiving) {
++                        this.i = MathHelper.d(this.tracker.getHeadRotation() * 256.0F / 360.0F);
++                        entityplayer.playerConnection.sendPacket(new PacketPlayOutEntityHeadRotation(this.tracker, (byte) i));
++                    }
+                     // CraftBukkit end
+ 
+                     if (this.tracker instanceof EntityLiving) {
+-- 
+2.6.4
