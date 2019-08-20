@@ -1,3 +1,5 @@
+//https://www.codewars.com/kata/psychic
+
 import java.util.Random;
 import java.lang.reflect.*;
 public class Psychic {
