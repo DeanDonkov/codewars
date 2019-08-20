@@ -1,3 +1,4 @@
+//https://www.codewars.com/kata/5a04863f06d5b6387c0000a5 [7kyu]
 public class People{
  private int age;
  private String name;
