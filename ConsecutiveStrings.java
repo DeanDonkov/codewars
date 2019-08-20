@@ -1,3 +1,5 @@
+//https://www.codewars.com/kata/consecutive-strings/
+
 class LongestConsec {
     public static String longestConsec(String[] strarr, int k) {
         if (strarr.length == 0 || k > strarr.length || k <= 0)
