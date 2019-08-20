@@ -1,3 +1,5 @@
+//https://www.codewars.com/kata/mexican-wave
+
 import java.util.*;
 
 public class MexicanWave {
