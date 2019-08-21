@@ -1,3 +1,5 @@
+//kata: https://www.codewars.com/kata/56445c4755d0e45b8c00010a/ [6kyu]
+
 public class BankerPlan {
     
     public static boolean fortune(int f0, double p, int c0, int n, double i) {
