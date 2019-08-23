@@ -1,3 +1,5 @@
+//https://www.codewars.com/kata/simple-fun-number-159-middle-permutation/
+
 import java.util.Arrays;
 
 class MiddlePermutation {
