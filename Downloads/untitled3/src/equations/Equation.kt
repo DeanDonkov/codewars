@@ -1,0 +1,5 @@
+package equations
+
+interface Equation {
+
+}
