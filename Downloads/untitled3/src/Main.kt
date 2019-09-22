@@ -3,5 +3,6 @@ import java.util.*
 
 fun main(){
 LinearEquation().genericEquation()
+    LinearEquation().withFractionsEquation()
 }
 
