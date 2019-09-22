@@ -99,8 +99,4 @@ class LinearEquation {
         println(equation)
 
     }
-
-    fun getRandomBoolean(): Boolean {
-        return nextBoolean()
-    }
 }
