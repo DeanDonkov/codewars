@@ -1,5 +1,0 @@
-package equations
-
-interface Equation {
-
-}
