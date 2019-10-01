@@ -1,1 +1,1 @@
-Codewars profile - https://www.codewars.com/users/TcpAckFrequency
+My arithmetic codewars problems i've solved throughout the years.
